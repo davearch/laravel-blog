@@ -11,6 +11,7 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    // summernote https://github.com/summernote/summernote/
     require('summernote');
 } catch (e) {
     console.log(e)

@@ -47,8 +47,3 @@ const typed = new Typed('.typing_element', {
     startDelay: 1000,
     contentType: 'html',
 });
-
-/**
- * Summernote wysiwyg editor
- * https://github.com/summernote/summernote/
- */
