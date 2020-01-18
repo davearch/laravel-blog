@@ -1,0 +1,18 @@
+name: laravel-blog
+recipe: laravel
+
+config:
+  webroot: public
+  via: nginx
+
+services:
+  node:
+    type: node
+    build:
+      - npm install && npm run dev
+
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
