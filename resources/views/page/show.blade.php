@@ -9,7 +9,7 @@
     <h3>{{ $page->title }}</h3>
     <hr />
     <p class="lead">
-      {{ $page->content }}
+      {!! $page->content !!}
     </p>
         <a href="{{ route('welcome') }}" class="btn btn-outline-secondary">Back</a>
         @auth

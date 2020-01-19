@@ -11,7 +11,7 @@
 
   <div class="form-group">
     <label for="content">Content</label>
-    <textarea name="content" rows="10" class="form-control"></textarea>
+    <textarea id="summernote" name="content" rows="10" class="form-control"></textarea>
   </div>
 
   <div class="form-group">
