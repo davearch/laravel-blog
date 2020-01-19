@@ -17,8 +17,7 @@
         </div>
 
         <div class="card-body">
-          {{ $blogpost->content }}
-
+          {!! $blogpost->content !!}
           <br />
           <br />
           <br />

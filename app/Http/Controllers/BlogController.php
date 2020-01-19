@@ -44,8 +44,28 @@ class BlogController extends Controller
         $blogpost = new Blog;
 
         $blogpost->title = $request->title;
-        $blogpost->content = $request->content;
-
+        $content = $request->content;
+        
+        // Handle content HTML
+        $dom = new \DomDocument();
+        $dom->loadHtml($content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        $images = $dom->getElementsByTagName('img');
+        
+        //loop over img elements, decode their base64 src and save them to public folder,
+        //and then replace base64 src with stored image URL.
+        foreach($images as $k => $img){
+            $data = $img->getAttribute('src');
+            list($type, $data) = explode(';', $data);
+            list(, $data)      = explode(',', $data);
+            $data = base64_decode($data);
+            $image_name= "/upload/" . time().$k.'.png';
+            $path = public_path() . $image_name;
+            file_put_contents($path, $data);
+            $img->removeAttribute('src');
+            $img->setAttribute('src', $image_name);
+        }
+        $content = $dom->saveHTML();
+        $blogpost->content = $content;
         $blogpost->save();
 
         return redirect()->route('blog_path');
