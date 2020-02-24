@@ -9,14 +9,12 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://www.linkedin.com/in/darchuletajr/">LinkedIn</a>
+                    <a href="https://leetcode.com/davearch/">LeetCode</a>
+                    <a href="https://twitter.com/DArchuletaJr">Twitter</a>
+                    <a href="https://www.instagram.com/darchuletajr/">Instagram</a>
                 </div>
             </div>
             <div class="container text-center my-5">
