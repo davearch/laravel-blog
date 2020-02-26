@@ -6,6 +6,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     David Archuleta Jr.
+                    <p class="lead">Software Engineer</p>
                 </div>
 
                 <div class="links">
