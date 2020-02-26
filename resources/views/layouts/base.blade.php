@@ -80,13 +80,17 @@
                     <a class="nav-link" href="{{ route('welcome') }}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('page_path', ['id' => 3]) }}">Work</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('blog_path') }}">Blog <span class="sr-only">(current)</span></a>
                 </li>
-                @foreach($pages as $page)
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{ route('page_path', ['id' => $page['id']]) }}">{{ $page['title'] }}</a>
-                  </li>
-                @endforeach
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('page_path', ['id' => 4]) }}">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('page_path', ['id' => 1]) }}">About</a>
+                </li>
 
             </ul>
         </div>
