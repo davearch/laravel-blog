@@ -9,8 +9,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/blog">Blog</a>
+                    <a href="https://github.com/davearch">GitHub</a>
                     <a href="https://www.linkedin.com/in/darchuletajr/">LinkedIn</a>
                     <a href="https://leetcode.com/davearch/">LeetCode</a>
                     <a href="https://twitter.com/DArchuletaJr">Twitter</a>
