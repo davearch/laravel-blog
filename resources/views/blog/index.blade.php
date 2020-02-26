@@ -7,10 +7,10 @@
   <h1>Blog Posts</h1>
   <div class="row">
   @foreach($blogposts as $blogpost)
-    <div class="col-md-6">
+    <div class="col-md-12">
       <br />
       <br />
-      <div class="card">
+      <div class="card text-white bg-dark mb-3">
 
         <div class="card-header">
           <a href="{{ route('blogpost_path', ['id' => $blogpost->id]) }}">{{ $blogpost->title }}</a>
