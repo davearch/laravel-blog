@@ -13,7 +13,7 @@
       <div class="card text-white bg-dark mb-3">
 
         <div class="card-header">
-          <a href="{{ route('blogpost_path', ['id' => $blogpost->id]) }}">{{ $blogpost->title }}</a>
+          <a class="h4" href="{{ route('blogpost_path', ['id' => $blogpost->id]) }}">{{ $blogpost->title }}</a>
         </div>
 
         <div class="card-body">
