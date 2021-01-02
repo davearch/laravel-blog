@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Blog;
 
 class BlogController extends Controller
@@ -19,7 +20,10 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $blogposts = Blog::all();
+	$blogposts = Blog::all();
+	foreach($blogposts as $b) {
+	    $b->truncated = Str::limit($b->content, 300);
+	}
         return view('blog.index', ['blogposts' => $blogposts]);
     }
 

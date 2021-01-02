@@ -17,9 +17,7 @@
         </div>
 
         <div class="card-body">
-          {!! $blogpost->content !!}
-          <br />
-          <br />
+          {!! $blogpost->truncated !!}
           <br />
 
           <p class="lead">
